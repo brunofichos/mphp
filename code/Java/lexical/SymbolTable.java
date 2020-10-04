@@ -31,6 +31,7 @@ public class SymbolTable {
 		st.put("%=", TokenType.MOD_ASSIGN);
 		st.put("++", TokenType.INCREMENT);
 		st.put("--", TokenType.DECREMENT);
+		st.put(".=", TokenType.CONCAT_ASSIGN);
 		st.put("as", TokenType.AS);
 
 		// Logic operators
@@ -42,6 +43,7 @@ public class SymbolTable {
 		st.put(">=", TokenType.GREATER_EQUAL);
 		st.put("and", TokenType.AND);
 		st.put("or", TokenType.OR);
+		st.put("!", TokenType.INVERSE);
 
 		// Arithmetic operators
 		st.put("+", TokenType.ADD);
@@ -56,6 +58,9 @@ public class SymbolTable {
 		st.put("true", TokenType.TRUE);
 		st.put("foreach", TokenType.FOREACH);
 		st.put("echo", TokenType.ECHO);
+		st.put("elseif", TokenType.ELSEIF);
+		st.put("else", TokenType.ELSE);
+		st.put("array", TokenType.ARRAY);
 
 		// Others
 		st.put("read", TokenType.READ);

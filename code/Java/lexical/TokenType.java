@@ -22,6 +22,7 @@ public enum TokenType {
 	ASSIGN,        // =
 	INCR_ASSIGN,   // +=
 	DECR_ASSIGN,   // -=
+	CONCAT_ASSIGN, // -=
 	MUX_ASSIGN,    // *=
 	DIV_ASSIGN,    // /=
 	MOD_ASSIGN,    // %=
@@ -38,6 +39,7 @@ public enum TokenType {
 	GREATER_EQUAL, // >=
 	AND,           // and
 	OR,            // or
+	INVERSE,       // !
 
 	// Arithmetic operators
 	ADD,           // +
@@ -49,14 +51,18 @@ public enum TokenType {
 	// Keywords
 	WHILE,         // while
 	IF,            // if
+	ELSEIF,        // else if
+	ELSE,          // else
 	TRUE,          // true
 	FOREACH,	   // foreach
 	ECHO,          // echo
+	ARRAY,         // array
 
 	// Others
 	NUMBER,        // number
 	READ,          // read
 	VAR,           // variable
-	STRING         //STRING
+	VARVAR,           // variable
+	STRING         // STRING
 
 }
