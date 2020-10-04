@@ -13,6 +13,14 @@ public class SymbolTable {
 		// Symbols
 		st.put(";", TokenType.SEMICOLON);
 		st.put(".", TokenType.CONCATENATE);
+		st.put(",", TokenType.COMMA);
+		st.put("(", TokenType.PARAN_OPEN);
+		st.put(")", TokenType.PARAN_CLOSE);
+		st.put("{", TokenType.BRACK_OPEN);
+		st.put("}", TokenType.BRACK_CLOSE);
+		st.put("[", TokenType.BRACE_OPEN);
+		st.put("]", TokenType.BRACE_CLOSE);
+		st.put("=>",TokenType.ACCESS_ARRAY);
 
 		//Assigment operators
 		st.put("=", TokenType.ASSIGN);
@@ -23,6 +31,7 @@ public class SymbolTable {
 		st.put("%=", TokenType.MOD_ASSIGN);
 		st.put("++", TokenType.INCREMENT);
 		st.put("--", TokenType.DECREMENT);
+		st.put("as", TokenType.AS);
 
 		// Logic operators
 		st.put("==", TokenType.EQUAL);
@@ -59,6 +68,6 @@ public class SymbolTable {
 
 	public TokenType find(String token) {
 		return this.contains(token) ?
-					st.get(token) : TokenType.VAR;
+					st.get(token) : TokenType.STRING;
 	}
 }

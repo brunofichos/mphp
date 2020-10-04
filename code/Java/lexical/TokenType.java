@@ -9,6 +9,14 @@ public enum TokenType {
 	// Symbols
 	SEMICOLON,     // ;
 	CONCATENATE,   // .
+	COMMA,         // ,
+	PARAN_OPEN,    // (
+	PARAN_CLOSE,   // )
+	BRACK_OPEN,    // [
+	BRACK_CLOSE,   // ]
+	BRACE_OPEN,    // {
+	BRACE_CLOSE,   // }
+	ACCESS_ARRAY,   // =>
 
 	//Assigment operators
 	ASSIGN,        // =
@@ -19,6 +27,7 @@ public enum TokenType {
 	MOD_ASSIGN,    // %=
 	INCREMENT,     // ++
 	DECREMENT,     // --
+	AS,            // as
 
 	// Logic operators
 	EQUAL,         // ==
@@ -47,6 +56,7 @@ public enum TokenType {
 	// Others
 	NUMBER,        // number
 	READ,          // read
-	VAR            // variable
+	VAR,           // variable
+	STRING         //STRING
 
 }
